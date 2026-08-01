@@ -930,6 +930,87 @@ header.sticky {
     }
 }
 
+@media (max-width: 480px) {
+    .navbar {
+        padding: 12px 0;
+        position: relative;
+    }
+
+    .logo {
+        font-size: 1.35rem;
+    }
+
+    .hero {
+        min-height: 82vh;
+        margin-top: 72px;
+    }
+
+    .hero-content {
+        width: min(100%, 94%);
+        padding: 34px 16px;
+        border-radius: 22px;
+    }
+
+    .hero h1 {
+        font-size: clamp(2.1rem, 8vw, 2.7rem);
+    }
+
+    .hero h3 {
+        font-size: 0.8rem;
+        letter-spacing: 0.22em;
+        margin-bottom: 12px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn,
+    .btn-outline {
+        width: 100%;
+    }
+
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+
+    .nav-links {
+        inset: 72px 0 auto 0;
+        height: calc(100vh - 72px);
+        padding: 20px 18px 16px;
+    }
+
+    .menu-btn {
+        top: 14px;
+        right: 14px;
+        width: 44px;
+        height: 44px;
+    }
+
+    .testimonial-card,
+    .contact-card,
+    .booking-form,
+    .about-card,
+    .service-card,
+    .pricing-card {
+        padding: 18px;
+    }
+
+    .footer {
+        padding: 42px 0 20px;
+    }
+
+    .footer-links {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .social-icons {
+        flex-wrap: wrap;
+    }
+}
+
 /* ===========================
    FOOTER
 =========================== */
