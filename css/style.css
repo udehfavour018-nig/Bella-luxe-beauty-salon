@@ -136,9 +136,17 @@ header {
 
 .menu-btn {
     display: none;
-    font-size: 1.9rem;
-    color: var(--accent);
+    font-size: 1.1rem;
+    color: var(--accent-strong);
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(179, 110, 116, 0.18);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
     cursor: pointer;
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
 }
 
 /* ===========================
@@ -849,10 +857,13 @@ header.sticky {
         display: none;
         flex-direction: column;
         gap: 0;
-        padding: 28px 24px;
-        background: rgba(255,255,255,0.97);
+        padding: 28px 24px 18px;
+        background: rgba(255,255,255,0.98);
         border-top: 1px solid rgba(179, 110, 116, 0.12);
-        box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+        box-shadow: 0 24px 60px rgba(0,0,0,0.14);
+        height: calc(100vh - 86px);
+        overflow-y: auto;
+        z-index: 998;
     }
 
     .nav-links.show {
@@ -866,6 +877,7 @@ header.sticky {
     .nav-links a {
         padding: 16px 0;
         border-bottom: 1px solid rgba(179, 110, 116, 0.08);
+        font-size: 1rem;
     }
 
     .book-btn {
@@ -874,6 +886,19 @@ header.sticky {
 
     .menu-btn {
         display: block;
+        position: absolute;
+        top: 22px;
+        right: 24px;
+        background: var(--accent);
+        color: #fff;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        box-shadow: 0 18px 40px rgba(147, 79, 88, 0.18);
+        cursor: pointer;
+        z-index: 1100;
     }
 
     .gallery-grid {
